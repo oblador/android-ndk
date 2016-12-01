@@ -1,4 +1,4 @@
-FROM bitriseio/docker-android-alpha:latest
+FROM bitriseio/docker-android:latest
 
 ENV ANDROID_NDK_HOME /opt/android-ndk
 
@@ -47,5 +47,5 @@ ENV PATH ${PATH}:${ANDROID_HOME}/cmake/bin
 # Cleaning
 RUN apt-get clean
 
-ENV BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK v2016_12_01_1
+ENV BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK v2016_12_01_2
 CMD bitrise -version
